@@ -1,8 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import requests
 
 app = Flask(__name__)
 port = 3000
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/api/box", methods=["GET"])
 def box_api():
@@ -30,6 +34,5 @@ def box_api():
     except Exception as error:
         return jsonify({"error": str(error)}), 500
 
-
 if __name__ == "__main__":
-          app.run(host='0.0.0.0', port=3000)
+    app.run(host='0.0.0.0', port=port)
