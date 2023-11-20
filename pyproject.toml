@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "python-template"
 version = "0.1.0"
-description = ""
-authors = ["Samir Œ "]
+description = "blackboxAi is an artificial intelligence tool designed to enhance coding experiences. With a focus on simplicity and efficiency, it aims to assist developers in various coding tasks, providing valuable insights, suggestions, and automation to streamline the development process.
+"
+authors = ["Samir Œ"]
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.11"
